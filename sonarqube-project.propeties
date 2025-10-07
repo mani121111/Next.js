@@ -1,0 +1,7 @@
+sonar.projectKey=your_project_key
+sonar.projectName=Your Project Name
+sonar.projectVersion=1.0
+sonar.sources=.
+sonar.exclusions=node_modules/**,coverage/**
+sonar.host.url=http://localhost:9000
+sonar.login=your_sonarqube_token 
