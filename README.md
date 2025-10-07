@@ -1,24 +1,23 @@
 🧑‍💻 1. Source Code in GitHub
 The Next.js project is stored in a GitHub repository.
 Contains files like:
-     package.json: dependencies and scripts (npm run build, npm start)
-     .next/, pages/, app/: Next.js specific folders
-     Dockerfile: to containerize the app
-     Jenkinsfile: defines CI/CD pipeline
-     k8s/: contains Kubernetes YAML files
+package.json: dependencies and scripts (npm run build, npm start)
+.next/, pages/, app/: Next.js specific folders
+Dockerfile: to containerize the app
+Jenkinsfile: defines CI/CD pipeline
+k8s/: contains Kubernetes YAML files
 ✅ Git acts as the source of truth.
 
 🔁 2. Jenkins CI/CD Pipeline
-
 A Jenkins job is set up to automate the workflow.
 Trigger: Manual or automatic (e.g., on push to main branch).
 Jenkinsfile stages:
-      Checkout Code – Pulls from GitHub.
-      Install Dependencies – npm install
-      Build Project – npm run build
-      Dockerize App – docker build -t MynextJS .
-      Push Image – Pushes image to Docker Hub.
-      (Optional): Deploy to Kubernetes via kubectl apply.
+Checkout Code – Pulls from GitHub.
+Install Dependencies – npm install
+Build Project – npm run build
+Dockerize App – docker build -t MynextJS .
+Push Image – Pushes image to Docker Hub.
+(Optional): Deploy to Kubernetes via kubectl apply.
 🐳 3. Dockerization
 The Dockerfile packages the Next.js app for deployment.
 📄 Example Dockerfile: 
