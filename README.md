@@ -21,7 +21,7 @@ CREATE TABLE users (
 );
 
 
-docker build -t surya:v1 .
+docker build -t mani121:v1 .
 docker run  --name nodejs-app -d -p 3000:3000 nodejs-project
 https://login.docker.com/activate
 
@@ -34,6 +34,5 @@ docker tag localimage:version username/reponame:tagname
 docker push 
 
 
-docker run --name sonar -d -p 9000:9000 sonarqube:latest
 
 
